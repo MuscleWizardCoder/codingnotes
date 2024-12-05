@@ -1,0 +1,26 @@
+HTML is composed of elements. An elemnet has: <Opening Tag>Content</Closing Tag>
+
+Elements
+<h*></h*> - Headers. Replace * with 1 - 6
+<body></body - Body. Only content within the <body> can be displayed on the screen. Indentation is not needed in HTML but makes code easier to read
+<div></div - Division. Container that breaks the page into sections. Style can be applied to all elements within a <div> element
+<p></p> - Paragraph. Contain a block of plain text
+<span></span> - Span. Contain small pieces of text or HTML. Used to separate small pieces of content that are on the same line as other content
+<br> - Line Break. No closing tag, moves following text to new line
+<ul></ul> - Unordered List. Bullet point list with no ordinals. Items in the list must be added using the <li> tag
+<ol></ol> - Ordered List. Bullet point list with ordinals. Items in the list must be added using the <li> tag
+<li></li> - Line Item. Adds a new item to a list on a new line.
+<img /> - Image. Self-closing tag for adding an image to a page. Must contain the src attribute.
+
+
+Attributes are content added to the opening tag of an element and can be used to for everything from providing info to changing style. Attributes have two parts:
+  - name of the attribute
+  - value of the attribute
+
+id="***" - Gives the element an ID
+src="***" - Source for 
+
+Style tags allow style to be applied to text
+
+<em></em> - Emphasises text. Generally renders as italics.
+<strong></storng> - Highlights important text. Generally renders as bold.
