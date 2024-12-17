@@ -1,3 +1,19 @@
+HTML files require certain elements to set up the document properly. A document type declaration lets browsers know we are using HTML.
+
+<!DOCTYPE html>
+
+To create HTML structure and content, we need HTML tags. Anything between them is interpreted as HTML code.
+
+<html></html>
+
+The <head> element contains all the metadata for a web page. Metadata isn't displayed on the page.
+
+<head></head>
+
+The <head> element can contain the page title.
+
+<title></title>
+
 HTML is composed of elements. An elemnet has: <Opening Tag>Content</Closing Tag>
 
 Elements
@@ -11,6 +27,8 @@ Elements
 <ol></ol> - Ordered List. Bullet point list with ordinals. Items in the list must be added using the <li> tag
 <li></li> - Line Item. Adds a new item to a list on a new line.
 <img /> - Image. Self-closing tag for adding an image to a page. Must contain the src attribute.
+<video></video> - Video. Tag for adding a video to a page. Must contain the src attribute.
+<a></a> - Anchor. Adds a link to a page. Must contain the the href attribute
 
 
 Attributes are content added to the opening tag of an element and can be used to for everything from providing info to changing style. Attributes have two parts:
@@ -18,9 +36,15 @@ Attributes are content added to the opening tag of an element and can be used to
   - value of the attribute
 
 id="***" - Gives the element an ID
-src="***" - Source for 
+src="***" - Source for a video or image
+width="***" - Width of an element
+height="***" - Height of an element
+controls = - Adds basic controls such as play and pause
+href="**" - Hypertext reference, links to a path
 
 Style tags allow style to be applied to text
 
 <em></em> - Emphasises text. Generally renders as italics.
 <strong></storng> - Highlights important text. Generally renders as bold.
+
+
