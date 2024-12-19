@@ -1,1 +1,4 @@
+Console.WriteLine() - Prints text to console
+Console.ReadLine() - Captures text entered in to console
 
+//  or  anything between /* and */ - Comments
