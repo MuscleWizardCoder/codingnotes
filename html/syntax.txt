@@ -40,7 +40,8 @@ src="***" - Source for a video or image
 width="***" - Width of an element
 height="***" - Height of an element
 controls = - Adds basic controls such as play and pause
-href="**" - Hypertext reference, links to a path
+href ="**" - Hypertext reference, links to a path
+target = 
 
 Style tags allow style to be applied to text
 
