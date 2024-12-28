@@ -1,3 +1,5 @@
+W3C recommends 2 spaces of indentation when writing HTML.
+
 HTML files require certain elements to set up the document properly. A document type declaration lets browsers know we are using HTML.
 
 <!DOCTYPE html>
@@ -41,11 +43,25 @@ width="***" - Width of an element
 height="***" - Height of an element
 controls = - Adds basic controls such as play and pause
 href ="**" - Hypertext reference, links to a path
-target = 
+target = Specifies how the window should open after a link is clicked. To open in a new window, the target value should be "_blank"
+./ = Relative path
 
 Style tags allow style to be applied to text
 
 <em></em> - Emphasises text. Generally renders as italics.
 <strong></storng> - Highlights important text. Generally renders as bold.
+
+Any element can be turned into a link by wrapping that element with an anchor element. See the example below:
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="https://www.Prickly_Pear_Closeup.jpg" alt="A red prickly pear fruit"/></a>
+
+To link to an id on the page, use a # sign then the id. See example below
+<a href="#introduction">Introduction</a>
+
+To add a comment to HTML:
+<!-- This is a comment that the browser will not display. -->
+
+To escape an ampersand:
+&amp
+
 
 
