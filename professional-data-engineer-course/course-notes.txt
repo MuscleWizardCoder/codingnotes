@@ -1,1 +1,4 @@
+Exam Guide: cloud.google.com/learn/certification/guides/data-engineer
+Learning Path: www.cloudskillsboost.google/paths/16
+
 
