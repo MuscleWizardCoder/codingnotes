@@ -31,6 +31,11 @@ Elements
 <img /> - Image. Self-closing tag for adding an image to a page. Must contain the src attribute.
 <video></video> - Video. Tag for adding a video to a page. Must contain the src attribute.
 <a></a> - Anchor. Adds a link to a page. Must contain the the href attribute
+<table></table> - Table. Requires table rows, and table data
+<tr></tr> - Table Row.
+<td></td> - Table Data. Each entry per row will create a column.
+<th></th> - Table heading. Can take the scope attribute
+<tbody></tbody> - table body. Contains table's data.
 
 
 Attributes are content added to the opening tag of an element and can be used to for everything from providing info to changing style. Attributes have two parts:
@@ -43,8 +48,12 @@ width="***" - Width of an element
 height="***" - Height of an element
 controls = - Adds basic controls such as play and pause
 href ="**" - Hypertext reference, links to a path
-target = Specifies how the window should open after a link is clicked. To open in a new window, the target value should be "_blank"
-./ = Relative path
+target - Specifies how the window should open after a link is clicked. To open in a new window, the target value should be "_blank"
+./ - Relative path
+scope="col" - Clarifies that a heading is for a column
+scope="row" - Clarifies that a heading is for a row
+colspan="*" - Spans data across a number of columns equal to the integer. Must be >= 1.
+rowspan="*" - Spans data across a number of rows equal to the integer. Must be >= 1.
 
 Style tags allow style to be applied to text
 
