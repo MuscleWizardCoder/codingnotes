@@ -44,6 +44,7 @@ Attributes are content added to the opening tag of an element and can be used to
 
 id="***" - Gives the element an ID
 src="***" - Source for a video or image
+alt="***" - Displays alt text if an image cannot be shown or if a user is using a screenreader.
 width="***" - Width of an element
 height="***" - Height of an element
 controls = - Adds basic controls such as play and pause
