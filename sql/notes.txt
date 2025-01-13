@@ -1,1 +1,187 @@
 
+Common SQL Syntax
+=================
+
+Data Definition Language (DDL)
+------------------------------
+1. Create a Database
+   CREATE DATABASE database_name;
+
+2. Drop a Database
+   DROP DATABASE database_name;
+
+3. Create a Table
+   CREATE TABLE table_name (
+       column1 datatype constraints,
+       column2 datatype constraints,
+       ...
+   );
+
+4. Drop a Table
+   DROP TABLE table_name;
+
+5. Alter a Table
+   - Add a Column:
+     ALTER TABLE table_name ADD column_name datatype constraints;
+
+   - Drop a Column:
+     ALTER TABLE table_name DROP COLUMN column_name;
+
+   - Modify a Column:
+     ALTER TABLE table_name MODIFY column_name new_datatype;
+
+Data Manipulation Language (DML)
+--------------------------------
+1. Insert Data
+   INSERT INTO table_name (column1, column2, ...)
+   VALUES (value1, value2, ...);
+
+2. Update Data
+   UPDATE table_name
+   SET column1 = value1, column2 = value2, ...
+   WHERE condition;
+
+3. Delete Data
+   DELETE FROM table_name
+   WHERE condition;
+
+4. Select Data
+   SELECT column1, column2, ...
+   FROM table_name
+   WHERE condition;
+
+Data Query Language (DQL)
+--------------------------
+1. Select All Columns
+   SELECT * FROM table_name;
+
+2. Filter Results
+   SELECT column1, column2
+   FROM table_name
+   WHERE condition;
+
+3. Sort Results
+   SELECT column1, column2
+   FROM table_name
+   ORDER BY column_name ASC|DESC;
+
+4. Group Results
+   SELECT column_name, COUNT(*)
+   FROM table_name
+   GROUP BY column_name;
+
+5. Having Clause (Post-Grouping Filter)
+   SELECT column_name, COUNT(*)
+   FROM table_name
+   GROUP BY column_name
+   HAVING COUNT(*) > value;
+
+Data Control Language (DCL)
+----------------------------
+1. Grant Permissions
+   GRANT SELECT, INSERT ON table_name TO user_name;
+
+2. Revoke Permissions
+   REVOKE SELECT, INSERT ON table_name FROM user_name;
+
+Transaction Control Language (TCL)
+----------------------------------
+1. Begin Transaction
+   BEGIN TRANSACTION;
+
+2. Commit Transaction
+   COMMIT;
+
+3. Rollback Transaction
+   ROLLBACK;
+
+Joins
+-----
+1. Inner Join
+   SELECT columns
+   FROM table1
+   INNER JOIN table2 ON table1.column = table2.column;
+
+2. Left Join
+   SELECT columns
+   FROM table1
+   LEFT JOIN table2 ON table1.column = table2.column;
+
+3. Right Join
+   SELECT columns
+   FROM table1
+   RIGHT JOIN table2 ON table1.column = table2.column;
+
+4. Full Outer Join
+   SELECT columns
+   FROM table1
+   FULL OUTER JOIN table2 ON table1.column = table2.column;
+
+Set Operations
+--------------
+1. Union
+   SELECT column1, column2
+   FROM table1
+   UNION
+   SELECT column1, column2
+   FROM table2;
+
+2. Union All
+   SELECT column1, column2
+   FROM table1
+   UNION ALL
+   SELECT column1, column2
+   FROM table2;
+
+3. Intersect
+   SELECT column1, column2
+   FROM table1
+   INTERSECT
+   SELECT column1, column2
+   FROM table2;
+
+4. Except/Minus
+   SELECT column1, column2
+   FROM table1
+   EXCEPT
+   SELECT column1, column2
+   FROM table2;
+
+Indexes
+-------
+1. Create an Index
+   CREATE INDEX index_name ON table_name (column1, column2, ...);
+
+2. Drop an Index
+   DROP INDEX index_name;
+
+Other Useful Syntax
+-------------------
+1. Limit Results
+   SELECT column1, column2
+   FROM table_name
+   LIMIT number_of_rows;
+
+2. Subqueries
+   SELECT column1
+   FROM table_name
+   WHERE column2 IN (SELECT column2 FROM other_table WHERE condition);
+
+3. Case Statement
+   SELECT column1,
+          CASE
+              WHEN condition1 THEN result1
+              WHEN condition2 THEN result2
+              ELSE result3
+          END AS alias_name
+   FROM table_name;
+
+4. Create a View
+   CREATE VIEW view_name AS
+   SELECT column1, column2
+   FROM table_name
+   WHERE condition;
+
+5. Drop a View
+   DROP VIEW view_name;
+
